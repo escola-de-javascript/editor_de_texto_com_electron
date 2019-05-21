@@ -14,7 +14,9 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "material-icons": "^0.2.3",
+    "vue": "^2.6.10",
+    "vuesax": "^3.4.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",
@@ -25,6 +27,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-cli-plugin-electron-builder": "^1.3.2",
+    "vue-cli-plugin-vuesax": "^1.0.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
