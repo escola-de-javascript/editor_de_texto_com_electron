@@ -6,6 +6,7 @@ import {
   installVueDevtools
 } from 'vue-cli-plugin-electron-builder/lib'
 import path from 'path'
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -18,7 +19,7 @@ protocol.registerSchemesAsPrivileged([{ scheme: 'app', privileges: { secure: tru
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 800, height: 600, icon: path.join(__static, "icon.ico"), webPreferences: {
+    width: 800, height: 600, icon: path.join(__static, "icon.png"), webPreferences: {
       nodeIntegration: true
     }
   })
