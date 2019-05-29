@@ -1,7 +1,7 @@
 <template>
   <div class="editor">
-    <button @click="openFile" class="button is-small">Abrir filepath</button>
-    <button @click="saveFile" class="button is-small">Salvar filepath</button>
+    <button @click="openFile" class="button is-small">Abrir Arquivo</button>
+    <button @click="saveFile" class="button is-small">Salvar Arquivo</button>
     <quill-editor v-model="content" :options="editorOption" @change="onEditorChange($event)"></quill-editor>
   </div>
 </template>
@@ -80,7 +80,7 @@ export default {
         : `${fileToSave}.escola_js`;
       fs.writeFile(filePathToSave, this.content, err => {
         if (err) throw err;
-        console.log("The file has been saved!");
+        alert("Arquivo salvo com sucesso!");
       });
     },
     onEditorChange({ html }) {
